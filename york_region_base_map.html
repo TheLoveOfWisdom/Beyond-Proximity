@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cd8ad4549e3b407d08868e2fb7dfee36 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cd8ad4549e3b407d08868e2fb7dfee36" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cd8ad4549e3b407d08868e2fb7dfee36 = L.map(
+                "map_cd8ad4549e3b407d08868e2fb7dfee36",
+                {
+                    center: [44.0, -79.4],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3234c97d06bee2264931379758595ccc = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3234c97d06bee2264931379758595ccc.addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var marker_053696c8110d804b918174afeb559f80 = L.marker(
+                [43.829, -79.336],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_e5236674c9e8372d4fcf085d2496b9e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_194bace0e0fed2cfb9f88b8c687610f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10d657d01ce35cb1b41e44996752faae = $(`<div id="html_10d657d01ce35cb1b41e44996752faae" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>105 Gibson Centre</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_194bace0e0fed2cfb9f88b8c687610f5.setContent(html_10d657d01ce35cb1b41e44996752faae);
+            
+        
+
+        marker_053696c8110d804b918174afeb559f80.bindPopup(popup_194bace0e0fed2cfb9f88b8c687610f5)
+        ;
+
+        
+    
+    
+                marker_053696c8110d804b918174afeb559f80.setIcon(icon_e5236674c9e8372d4fcf085d2496b9e9);
+            
+    
+            var marker_e97fd27fc9c294225d850d07729ec35e = L.marker(
+                [44.002, -79.467],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_b693b5e8a08b3cd48a03178f7dd7903d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b80f07a25ee4eafa24201be84045513 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9254c27ec222fe67b1d2c5db0af842b6 = $(`<div id="html_9254c27ec222fe67b1d2c5db0af842b6" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Aurora Food Pantry</b><br>                 Type: Primary Hub<br>                 Hours/Week: 7.75<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_4b80f07a25ee4eafa24201be84045513.setContent(html_9254c27ec222fe67b1d2c5db0af842b6);
+            
+        
+
+        marker_e97fd27fc9c294225d850d07729ec35e.bindPopup(popup_4b80f07a25ee4eafa24201be84045513)
+        ;
+
+        
+    
+    
+                marker_e97fd27fc9c294225d850d07729ec35e.setIcon(icon_b693b5e8a08b3cd48a03178f7dd7903d);
+            
+    
+            var marker_99071bf1901fcfc80b7929297f0391dc = L.marker(
+                [43.791, -79.488],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_6ebdba03c85982ec8d0570cea229878b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87f320139cf8e0c99f5b38bb394305c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6170299c240bc539b9e5af9e22477c8a = $(`<div id="html_6170299c240bc539b9e5af9e22477c8a" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Chasdei Kaduri Jewish Food Bank</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_87f320139cf8e0c99f5b38bb394305c5.setContent(html_6170299c240bc539b9e5af9e22477c8a);
+            
+        
+
+        marker_99071bf1901fcfc80b7929297f0391dc.bindPopup(popup_87f320139cf8e0c99f5b38bb394305c5)
+        ;
+
+        
+    
+    
+                marker_99071bf1901fcfc80b7929297f0391dc.setIcon(icon_6ebdba03c85982ec8d0570cea229878b);
+            
+    
+            var marker_df7bef2573962e975e7e9bde55ef16d3 = L.marker(
+                [44.225, -79.458],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_72222044208ba0a07e5c491141ba5408 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbe89698112e207b9b1ff0909e053a0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_153e59d9b1923931752fdd1ef5b81021 = $(`<div id="html_153e59d9b1923931752fdd1ef5b81021" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Gathering Place</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_cbe89698112e207b9b1ff0909e053a0f.setContent(html_153e59d9b1923931752fdd1ef5b81021);
+            
+        
+
+        marker_df7bef2573962e975e7e9bde55ef16d3.bindPopup(popup_cbe89698112e207b9b1ff0909e053a0f)
+        ;
+
+        
+    
+    
+                marker_df7bef2573962e975e7e9bde55ef16d3.setIcon(icon_72222044208ba0a07e5c491141ba5408);
+            
+    
+            var marker_6e2b41c9a4db60d71ba2977deea99fbf = L.marker(
+                [44.303, -79.358],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_77de43a44d64390ee134f843d239244e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd3c7178ada800bcf2b28f9293ee296b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0a0918f3ccaa481464dda6ff047c4e1 = $(`<div id="html_c0a0918f3ccaa481464dda6ff047c4e1" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Georgina Food Pantry</b><br>                 Type: Primary Hub<br>                 Hours/Week: 6.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_fd3c7178ada800bcf2b28f9293ee296b.setContent(html_c0a0918f3ccaa481464dda6ff047c4e1);
+            
+        
+
+        marker_6e2b41c9a4db60d71ba2977deea99fbf.bindPopup(popup_fd3c7178ada800bcf2b28f9293ee296b)
+        ;
+
+        
+    
+    
+                marker_6e2b41c9a4db60d71ba2977deea99fbf.setIcon(icon_77de43a44d64390ee134f843d239244e);
+            
+    
+            var marker_657a11a6c96c8c01e0b4bfea7d199e8b = L.marker(
+                [44.103, -79.485],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_145b2a09c920b8ea9598a66356a8376b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc5776a0f721daabeb72f94d6e3260bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f6cf68604940de1082efc33924b7009 = $(`<div id="html_3f6cf68604940de1082efc33924b7009" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Holland Landing Food Pantry</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_dc5776a0f721daabeb72f94d6e3260bc.setContent(html_3f6cf68604940de1082efc33924b7009);
+            
+        
+
+        marker_657a11a6c96c8c01e0b4bfea7d199e8b.bindPopup(popup_dc5776a0f721daabeb72f94d6e3260bc)
+        ;
+
+        
+    
+    
+                marker_657a11a6c96c8c01e0b4bfea7d199e8b.setIcon(icon_145b2a09c920b8ea9598a66356a8376b);
+            
+    
+            var marker_0a7b53d478e6e548e8ae0fc5a7ad4265 = L.marker(
+                [44.222, -79.466],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_74e89906a19b726a7600159cf82eeaa3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a387fd236a6e48b67f8578fd6e8b7d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44c9e269b34cf0316a6d2dd022357ea4 = $(`<div id="html_44c9e269b34cf0316a6d2dd022357ea4" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Hope For Today Church</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_7a387fd236a6e48b67f8578fd6e8b7d9.setContent(html_44c9e269b34cf0316a6d2dd022357ea4);
+            
+        
+
+        marker_0a7b53d478e6e548e8ae0fc5a7ad4265.bindPopup(popup_7a387fd236a6e48b67f8578fd6e8b7d9)
+        ;
+
+        
+    
+    
+                marker_0a7b53d478e6e548e8ae0fc5a7ad4265.setIcon(icon_74e89906a19b726a7600159cf82eeaa3);
+            
+    
+            var marker_0f3747a7a2c23f050378febded45e77a = L.marker(
+                [43.818, -79.497],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_f0e0c916e9bc4813590c4677dae4b43b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b4fa9ea8ae2b71bec80e41a82fd46fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffd90ae4ed94707a47d9235b4cbb9230 = $(`<div id="html_ffd90ae4ed94707a47d9235b4cbb9230" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Humanity First Food Bank</b><br>                 Type: Primary Hub<br>                 Hours/Week: 20.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_7b4fa9ea8ae2b71bec80e41a82fd46fd.setContent(html_ffd90ae4ed94707a47d9235b4cbb9230);
+            
+        
+
+        marker_0f3747a7a2c23f050378febded45e77a.bindPopup(popup_7b4fa9ea8ae2b71bec80e41a82fd46fd)
+        ;
+
+        
+    
+    
+                marker_0f3747a7a2c23f050378febded45e77a.setIcon(icon_f0e0c916e9bc4813590c4677dae4b43b);
+            
+    
+            var marker_0962454a10bef11665756cab7fa7dc20 = L.marker(
+                [43.804, -79.454],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_bf11832190322389e74086aa9c066111 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8f908f5e33606665bfe604d5d1a6aa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_677c3ed3c80c0a070b609ec68fad20ae = $(`<div id="html_677c3ed3c80c0a070b609ec68fad20ae" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Jewish Russian Speaking Community of Ontario</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_f8f908f5e33606665bfe604d5d1a6aa2.setContent(html_677c3ed3c80c0a070b609ec68fad20ae);
+            
+        
+
+        marker_0962454a10bef11665756cab7fa7dc20.bindPopup(popup_f8f908f5e33606665bfe604d5d1a6aa2)
+        ;
+
+        
+    
+    
+                marker_0962454a10bef11665756cab7fa7dc20.setIcon(icon_bf11832190322389e74086aa9c066111);
+            
+    
+            var marker_f137aa37dfff58af0f0756fd30633cdd = L.marker(
+                [43.998, -79.684],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_12fad7462002822eb24ae1cd2630b4d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbf134f54a7a42be2f55789b576bc04b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6262386738530e7aa3680519686cef95 = $(`<div id="html_6262386738530e7aa3680519686cef95" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>King Township Food Bank</b><br>                 Type: Primary Hub<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_dbf134f54a7a42be2f55789b576bc04b.setContent(html_6262386738530e7aa3680519686cef95);
+            
+        
+
+        marker_f137aa37dfff58af0f0756fd30633cdd.bindPopup(popup_dbf134f54a7a42be2f55789b576bc04b)
+        ;
+
+        
+    
+    
+                marker_f137aa37dfff58af0f0756fd30633cdd.setIcon(icon_12fad7462002822eb24ae1cd2630b4d7);
+            
+    
+            var marker_e5b0a8e211d1397f6bdf6916cf702ff7 = L.marker(
+                [44.225, -79.471],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_f8cbaf19f04a01a07709d5b8f65804ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6787c2e6e8633f41499d35be192a1db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_185180c2a33000414f799e338110746c = $(`<div id="html_185180c2a33000414f799e338110746c" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Maple Hill Baptist Church</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_d6787c2e6e8633f41499d35be192a1db.setContent(html_185180c2a33000414f799e338110746c);
+            
+        
+
+        marker_e5b0a8e211d1397f6bdf6916cf702ff7.bindPopup(popup_d6787c2e6e8633f41499d35be192a1db)
+        ;
+
+        
+    
+    
+                marker_e5b0a8e211d1397f6bdf6916cf702ff7.setIcon(icon_f8cbaf19f04a01a07709d5b8f65804ad);
+            
+    
+            var marker_ac816c939e4a4a128839e2e47b211387 = L.marker(
+                [43.878, -79.282],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_cda834800f799be43a1e88c631f606c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ec0df7f1d8a82c5e3609f1c4489ad44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17d3fd4fbc3e6ea4fcce457b70106012 = $(`<div id="html_17d3fd4fbc3e6ea4fcce457b70106012" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Markham Food Bank</b><br>                 Type: Primary Hub<br>                 Hours/Week: 12.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_9ec0df7f1d8a82c5e3609f1c4489ad44.setContent(html_17d3fd4fbc3e6ea4fcce457b70106012);
+            
+        
+
+        marker_ac816c939e4a4a128839e2e47b211387.bindPopup(popup_9ec0df7f1d8a82c5e3609f1c4489ad44)
+        ;
+
+        
+    
+    
+                marker_ac816c939e4a4a128839e2e47b211387.setIcon(icon_cda834800f799be43a1e88c631f606c3);
+            
+    
+            var marker_9d249420d57f8e2f811ff03e3bed3631 = L.marker(
+                [43.874, -79.3],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_04befc7a33666fd97f71ef49c4a69fdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ad7d9564ce8833771b19191b18bb8d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d926f624bf8743f8430b523afe4d478e = $(`<div id="html_d926f624bf8743f8430b523afe4d478e" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Masters Pantry - Unionville Alliance Church</b><br>                 Type: Community Pantry<br>                 Hours/Week: 3.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_6ad7d9564ce8833771b19191b18bb8d4.setContent(html_d926f624bf8743f8430b523afe4d478e);
+            
+        
+
+        marker_9d249420d57f8e2f811ff03e3bed3631.bindPopup(popup_6ad7d9564ce8833771b19191b18bb8d4)
+        ;
+
+        
+    
+    
+                marker_9d249420d57f8e2f811ff03e3bed3631.setIcon(icon_04befc7a33666fd97f71ef49c4a69fdb);
+            
+    
+            var marker_6da95c9deebeb27c7152a894ba49cab3 = L.marker(
+                [44.133, -79.273],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_4ca88f8edf97d9fd12b701858346d699 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7bd06ddf03a120e1deea980c52c6837 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15963e1d248ff4ba1f2538d066708698 = $(`<div id="html_15963e1d248ff4ba1f2538d066708698" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Mount Albert Food Pantry</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_d7bd06ddf03a120e1deea980c52c6837.setContent(html_15963e1d248ff4ba1f2538d066708698);
+            
+        
+
+        marker_6da95c9deebeb27c7152a894ba49cab3.bindPopup(popup_d7bd06ddf03a120e1deea980c52c6837)
+        ;
+
+        
+    
+    
+                marker_6da95c9deebeb27c7152a894ba49cab3.setIcon(icon_4ca88f8edf97d9fd12b701858346d699);
+            
+    
+            var marker_2ea2027cb718e769ad4f7a2a9cfb951c = L.marker(
+                [44.058, -79.438],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_31c54da000c80bf0168e1e5e64898136 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0eb304ee2ab4db3ac286baf1ab074fad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fa9a1d0c1e99bfb34c7a9e658b62dfe = $(`<div id="html_3fa9a1d0c1e99bfb34c7a9e658b62dfe" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Newmarket Food Pantry</b><br>                 Type: Primary Hub<br>                 Hours/Week: 20.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_0eb304ee2ab4db3ac286baf1ab074fad.setContent(html_3fa9a1d0c1e99bfb34c7a9e658b62dfe);
+            
+        
+
+        marker_2ea2027cb718e769ad4f7a2a9cfb951c.bindPopup(popup_0eb304ee2ab4db3ac286baf1ab074fad)
+        ;
+
+        
+    
+    
+                marker_2ea2027cb718e769ad4f7a2a9cfb951c.setIcon(icon_31c54da000c80bf0168e1e5e64898136);
+            
+    
+            var marker_bcc6fec0c4cdc0dfdbfa924b0aa23e80 = L.marker(
+                [43.985, -79.439],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_a35e4ee093a9b2dad7c8617cacee611b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e7b568c381f47543d0386a9f024cdd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d952f9d82b6fce6a12c70a6eae3836c3 = $(`<div id="html_d952f9d82b6fce6a12c70a6eae3836c3" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Northridge Community Church</b><br>                 Type: Community Pantry<br>                 Hours/Week: 10.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_2e7b568c381f47543d0386a9f024cdd1.setContent(html_d952f9d82b6fce6a12c70a6eae3836c3);
+            
+        
+
+        marker_bcc6fec0c4cdc0dfdbfa924b0aa23e80.bindPopup(popup_2e7b568c381f47543d0386a9f024cdd1)
+        ;
+
+        
+    
+    
+                marker_bcc6fec0c4cdc0dfdbfa924b0aa23e80.setIcon(icon_a35e4ee093a9b2dad7c8617cacee611b);
+            
+    
+            var marker_5a45da924d2c86433abc9315ba87d9b0 = L.marker(
+                [43.766, -79.566],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_bf79e38de9bdd5060e9b718393719659 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e42666cc5319769b8b1ac3131f2c9498 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1df938f1660efe608f86ff1915d44b4 = $(`<div id="html_d1df938f1660efe608f86ff1915d44b4" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>RCCG Communion Keystone Chapel</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_e42666cc5319769b8b1ac3131f2c9498.setContent(html_d1df938f1660efe608f86ff1915d44b4);
+            
+        
+
+        marker_5a45da924d2c86433abc9315ba87d9b0.bindPopup(popup_e42666cc5319769b8b1ac3131f2c9498)
+        ;
+
+        
+    
+    
+                marker_5a45da924d2c86433abc9315ba87d9b0.setIcon(icon_bf79e38de9bdd5060e9b718393719659);
+            
+    
+            var marker_642f6a2c5edd94953487ca97bf94757d = L.marker(
+                [43.882, -79.431],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_507904597689b6a3e9603504b4289072 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_269682dcf4ca0fcd86f5c01f0a5944cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_edcdf0b72e5ea7ed37cc3f958e8d8df6 = $(`<div id="html_edcdf0b72e5ea7ed37cc3f958e8d8df6" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Richmond Hill Community Food Bank</b><br>                 Type: Primary Hub<br>                 Hours/Week: 12.5<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_269682dcf4ca0fcd86f5c01f0a5944cd.setContent(html_edcdf0b72e5ea7ed37cc3f958e8d8df6);
+            
+        
+
+        marker_642f6a2c5edd94953487ca97bf94757d.bindPopup(popup_269682dcf4ca0fcd86f5c01f0a5944cd)
+        ;
+
+        
+    
+    
+                marker_642f6a2c5edd94953487ca97bf94757d.setIcon(icon_507904597689b6a3e9603504b4289072);
+            
+    
+            var marker_68cbcb5556dead2e4781f3c616fe0bd3 = L.marker(
+                [44.053, -79.475],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_bdb8f45e399bda266123f6cd53bd376b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d31478f22f4ef87ccf59a937f7f8684 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d337a182822ad418471324355a6a4008 = $(`<div id="html_d337a182822ad418471324355a6a4008" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Rose of Sharon</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_6d31478f22f4ef87ccf59a937f7f8684.setContent(html_d337a182822ad418471324355a6a4008);
+            
+        
+
+        marker_68cbcb5556dead2e4781f3c616fe0bd3.bindPopup(popup_6d31478f22f4ef87ccf59a937f7f8684)
+        ;
+
+        
+    
+    
+                marker_68cbcb5556dead2e4781f3c616fe0bd3.setIcon(icon_bdb8f45e399bda266123f6cd53bd376b);
+            
+    
+            var marker_0d800baf7667e8820c1b5ac37819e853 = L.marker(
+                [44.048, -79.458],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_d9aebdb47ff23e32184492cedd645328 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7caebf0c9a0d7ffd867877750abd5b5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09c1ae3f1b82f3289da299d0acea54cc = $(`<div id="html_09c1ae3f1b82f3289da299d0acea54cc" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>St Vincent de Paul</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_7caebf0c9a0d7ffd867877750abd5b5c.setContent(html_09c1ae3f1b82f3289da299d0acea54cc);
+            
+        
+
+        marker_0d800baf7667e8820c1b5ac37819e853.bindPopup(popup_7caebf0c9a0d7ffd867877750abd5b5c)
+        ;
+
+        
+    
+    
+                marker_0d800baf7667e8820c1b5ac37819e853.setIcon(icon_d9aebdb47ff23e32184492cedd645328);
+            
+    
+            var marker_19b93f2bf3dc8c94db7f904a44acc4c4 = L.marker(
+                [44.305, -79.356],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_672c55b032619a08962c4674d6f4c237 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37b0a75edbfcb2d782a562c9002e8c6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c35375a721d7e0ab4ef604d70d36ffc2 = $(`<div id="html_c35375a721d7e0ab4ef604d70d36ffc2" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>St. Andrews Presbyterian Church</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_37b0a75edbfcb2d782a562c9002e8c6f.setContent(html_c35375a721d7e0ab4ef604d70d36ffc2);
+            
+        
+
+        marker_19b93f2bf3dc8c94db7f904a44acc4c4.bindPopup(popup_37b0a75edbfcb2d782a562c9002e8c6f)
+        ;
+
+        
+    
+    
+                marker_19b93f2bf3dc8c94db7f904a44acc4c4.setIcon(icon_672c55b032619a08962c4674d6f4c237);
+            
+    
+            var marker_ffddab2a84199a5a6f78f2d7c7dec38c = L.marker(
+                [44.095, -79.435],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_c559f380ac0338dd5a7d5cdeef5597c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4880ee888a85ae03e923d69b3df846b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_864cec364888172abfaff468e25d6fea = $(`<div id="html_864cec364888172abfaff468e25d6fea" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>St. James the Apostle Anglican Church</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_4880ee888a85ae03e923d69b3df846b1.setContent(html_864cec364888172abfaff468e25d6fea);
+            
+        
+
+        marker_ffddab2a84199a5a6f78f2d7c7dec38c.bindPopup(popup_4880ee888a85ae03e923d69b3df846b1)
+        ;
+
+        
+    
+    
+                marker_ffddab2a84199a5a6f78f2d7c7dec38c.setIcon(icon_c559f380ac0338dd5a7d5cdeef5597c6);
+            
+    
+            var marker_d6e683fe77189edcf028b8f40525acde = L.marker(
+                [43.876, -79.438],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_e5fdbf7e6cf095177a091568424e3e5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29bbce5f98153711aaac9a173ff26930 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80ce580d4869271856f0dbbd2c268078 = $(`<div id="html_80ce580d4869271856f0dbbd2c268078" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>St. Mary's Anglican Church / Out of the Cold</b><br>                 Type: Community Pantry<br>                 Hours/Week: 4.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_29bbce5f98153711aaac9a173ff26930.setContent(html_80ce580d4869271856f0dbbd2c268078);
+            
+        
+
+        marker_d6e683fe77189edcf028b8f40525acde.bindPopup(popup_29bbce5f98153711aaac9a173ff26930)
+        ;
+
+        
+    
+    
+                marker_d6e683fe77189edcf028b8f40525acde.setIcon(icon_e5fdbf7e6cf095177a091568424e3e5f);
+            
+    
+            var marker_bcfba7d36b5776e2e43b3752a43182e0 = L.marker(
+                [43.844, -79.502],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_33cff654c7ba0b69343795131712bd38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbf2c0e70e6a1362592635eea43a728f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_807a0398d452624e2c79f24f585eea17 = $(`<div id="html_807a0398d452624e2c79f24f585eea17" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>St. Stephen's Anglican Church</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_dbf2c0e70e6a1362592635eea43a728f.setContent(html_807a0398d452624e2c79f24f585eea17);
+            
+        
+
+        marker_bcfba7d36b5776e2e43b3752a43182e0.bindPopup(popup_dbf2c0e70e6a1362592635eea43a728f)
+        ;
+
+        
+    
+    
+                marker_bcfba7d36b5776e2e43b3752a43182e0.setIcon(icon_33cff654c7ba0b69343795131712bd38);
+            
+    
+            var marker_d3769b9c887921c0cbfa38e62b4cb7f6 = L.marker(
+                [43.774, -79.61],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_dd12e4ca19b06e21b7b5ad8d8c435b38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0c9372f7efeb9eef6b5d323d6198f1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a3f5b19ec4a47c08808aa9da2749391 = $(`<div id="html_1a3f5b19ec4a47c08808aa9da2749391" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Vaughan Food Bank</b><br>                 Type: Primary Hub<br>                 Hours/Week: 24.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_d0c9372f7efeb9eef6b5d323d6198f1c.setContent(html_1a3f5b19ec4a47c08808aa9da2749391);
+            
+        
+
+        marker_d3769b9c887921c0cbfa38e62b4cb7f6.bindPopup(popup_d0c9372f7efeb9eef6b5d323d6198f1c)
+        ;
+
+        
+    
+    
+                marker_d3769b9c887921c0cbfa38e62b4cb7f6.setIcon(icon_dd12e4ca19b06e21b7b5ad8d8c435b38);
+            
+    
+            var marker_26bf87cb721e3ce3f682d6924af87b5d = L.marker(
+                [43.97, -79.261],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_0d23150623c59229a9287b17beaaf8a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe0dfd752e736fe5aa2ce99cf37b6368 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49ea1c59a9dd680a365255a598634206 = $(`<div id="html_49ea1c59a9dd680a365255a598634206" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Whitchurch-Stouffville Food Bank</b><br>                 Type: Primary Hub<br>                 Hours/Week: 10.0<br>                 Appt Only: No             </div>             </div>`)[0];
+                popup_fe0dfd752e736fe5aa2ce99cf37b6368.setContent(html_49ea1c59a9dd680a365255a598634206);
+            
+        
+
+        marker_26bf87cb721e3ce3f682d6924af87b5d.bindPopup(popup_fe0dfd752e736fe5aa2ce99cf37b6368)
+        ;
+
+        
+    
+    
+                marker_26bf87cb721e3ce3f682d6924af87b5d.setIcon(icon_0d23150623c59229a9287b17beaaf8a8);
+            
+    
+            var marker_bcd38c906f6029462508063cf2d683ac = L.marker(
+                [44.067, -79.439],
+                {
+}
+            ).addTo(map_cd8ad4549e3b407d08868e2fb7dfee36);
+        
+    
+            var icon_251d59ce97815291cdc44fe4293f5497 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2940b21234e684b715e4d00d779d523 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f9aaa6635f232a2bf41ad2dca3e47348 = $(`<div id="html_f9aaa6635f232a2bf41ad2dca3e47348" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 12px;">                 <b>Women's Support Network of York Region</b><br>                 Type: Community Pantry<br>                 Hours/Week: 1.0<br>                 Appt Only: Yes             </div>             </div>`)[0];
+                popup_c2940b21234e684b715e4d00d779d523.setContent(html_f9aaa6635f232a2bf41ad2dca3e47348);
+            
+        
+
+        marker_bcd38c906f6029462508063cf2d683ac.bindPopup(popup_c2940b21234e684b715e4d00d779d523)
+        ;
+
+        
+    
+    
+                marker_bcd38c906f6029462508063cf2d683ac.setIcon(icon_251d59ce97815291cdc44fe4293f5497);
+            
+</script>
+</html>
